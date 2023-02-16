@@ -1,10 +1,15 @@
 import "./styles/_main.scss";
+import { Header } from "./components/Header";
+import { BodySection } from "./components/BodySection";
 
 function App() {
   return (
     <div>
-      <h1>Dolce Neve</h1>
+      <Header/>
+      <BodySection/>
+
     </div>
+    
   )
 }
 
