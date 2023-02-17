@@ -1,0 +1,44 @@
+.body-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+}
+
+.section-header {
+  margin-left: 10%;
+  font-size: 2.5rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20vh);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+.section-text {
+  max-width: 70%;
+  margin-left: 5%;
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.hidden-text {
+  opacity: 0;
+  transform: translateX(-20vh);
+  transition: all 2s;
+}
+
+.show-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}

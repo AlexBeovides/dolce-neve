@@ -1,3 +1,5 @@
+import '../styles/NavBar.scss';
+
 export function NavBar() {
   return (
     <div className="main-navbar">

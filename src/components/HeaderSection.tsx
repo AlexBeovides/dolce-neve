@@ -1,6 +1,6 @@
 import { NavBar } from "./NavBar";
 
-export function Header() {
+export function HeaderSection() {
   return (
     <div className='main-header'>
       <NavBar/>
