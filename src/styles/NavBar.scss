@@ -1,19 +1,20 @@
 .main-navbar {
   width: 100%;
-  height: 14vh;
+  height: 11.5vh;
   position: fixed;
   top: 0; 
-  padding: 0 5% 0 5%;
+  padding: 0 3% 0 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
-  backdrop-filter: blur(7.5px);
+  background-color:rgb(243, 244, 246) ; 
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
   z-index: 100;
 
   ul {
     display: flex;
-    gap: 5em;
+    gap: 4rem;
   
     li {
       list-style-type: none;
@@ -21,17 +22,46 @@
       a {
         font-size: 1.3rem;
         color: black;
+        letter-spacing: 1px;
         text-decoration: none;
+        position: relative;
+
+        &:after {
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: -5%;
+          width: 110%;
+          height: 1px;
+          background-color: black;
+          transform: scaleX(0); 
+          transform-origin: right;
+          transition: transform 250ms ease-in; 
+          // opacity: 0;
+
+          
+        }
+
+        &:hover::after {
+          // width: 110%;
+          transform: scaleX(1);
+          transform-origin: left; 
+        }
+
+       
       }
+
+      
+      
+      
     }
   }
 
   .logo-container {
-    height: 95%;
-    aspect-ratio: 1/1;
-    background-image: url('../assets/images/logonew.png');
-    background-position: center;
-    background-size: cover;
+    color: black;
+    font-size: 2rem;
+
   }
 }
 

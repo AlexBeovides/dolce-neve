@@ -1,7 +1,11 @@
+import '../styles/RecipeSection.scss'
+
 export function RecipeSection() {
   return (
-    <div>
+    <div className="menu-section">
 
+
+      
     </div>
   )
 }

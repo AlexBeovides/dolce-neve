@@ -4,6 +4,10 @@ export function HeaderSection() {
   return (
     <div className='main-header'>
       <NavBar/>
+      
+      <div className="landing-img">
+
+      </div>
     </div>
   )
 }

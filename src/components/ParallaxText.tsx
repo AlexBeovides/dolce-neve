@@ -1,11 +1,11 @@
 import '../styles/ParallaxText.scss'
 
-export function ParallaxText() {
+export const ParallaxText=({ innerText }: { innerText: string }) => {
   return (
     <div className='parallax-text'>
       <span>
-      PLATOS POPULARES
+        {innerText}
       </span>
     </div>
-  )
+  );
 }

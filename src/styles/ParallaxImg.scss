@@ -1,6 +1,6 @@
 .parallax-wrapper {
   position: fixed;
-  top: 100px; 
+  top: 0; 
   z-index: -1;
 }
 
@@ -8,7 +8,7 @@
 .parallax-img {
   height: 100vh;
   width: 100vw;
-  background-image: url('../assets/images/header-img.jpg');
+  background-image: url('../assets/images/parallax-img.jpg');
   background-size: cover;
   background-position: center;
   filter:brightness(0.6);

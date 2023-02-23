@@ -1,9 +1,15 @@
 .parallax-text {
-  height: 80vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 6rem;
   color: white;
+
+  span {
+    text-transform:uppercase;
+  }
 }
 
+
+ 

@@ -14,11 +14,16 @@ function App() {
     <div>
         <HeaderSection/>
         <BodySection/>
-        <ParallaxText/>
+        <ParallaxText
+          innerText={"gelati popolari"}
+        />
         <ParallaxImg/>
         <MenuSection/>
-        <ParallaxImg/>
+        <ParallaxText
+          innerText={"deliziose ricette"}
+        />
         <RecipeSection/>
+        
         <FooterSection/>
 
     </div>

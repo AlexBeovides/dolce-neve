@@ -11,6 +11,7 @@ body,html {
   
   scroll-behavior: smooth;
   font-family: $bodyFont;
+  
 }
 
 .header {
@@ -20,9 +21,18 @@ body,html {
 .main-header {
   width: 100vw;
   height: 100vh;
-  background-image: url('../assets/images/img7.jfif');
-  background-size: cover;
+}
+
+.landing-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/header-img2.jpg');
+  filter:brightness(1);
+  background-size:cover;
+  background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
+  
 }
 
  

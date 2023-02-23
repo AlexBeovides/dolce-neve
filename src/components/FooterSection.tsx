@@ -1,8 +1,10 @@
+import '../styles/FooterSection.scss'
+
 export function FooterSection() {
   return (
-    <div className='main-heder'>
-      
+    <footer className='footer-section'>
+      a
 
-    </div>
+    </footer>
   )
 }
