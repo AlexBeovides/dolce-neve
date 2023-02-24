@@ -11,7 +11,15 @@ body,html {
   
   scroll-behavior: smooth;
   font-family: $bodyFont;
-  
+}
+
+.main-container {
+  overflow-y:auto;
+}
+
+.locked {
+  overflow-y: hidden;
+  position: fixed;
 }
 
 .header {

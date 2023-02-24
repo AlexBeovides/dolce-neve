@@ -1,12 +1,25 @@
 import '../styles/MenuSection.scss'
+
+import { useState , useEffect } from 'react';
+
 import { useInView } from 'react-intersection-observer'
 import { InView } from 'react-intersection-observer/InView';
-import { useState } from 'react';
+ 
+ 
 
+export const MenuSection= ({setInView}:{setInView:any}) => { 
 
-export function MenuSection() {
-  const { ref , inView } = useInView();
+  const { ref , inView }  = useInView();
 
+  useEffect (()=> {
+    console.log("asd")
+    if(inView==true){
+      setInView(true);
+    }
+    else {
+      setInView(false);
+    }
+  },[inView]);
 
   return (
     <div className='menu-section'>
@@ -14,7 +27,7 @@ export function MenuSection() {
 
       <div className='grid-container'>
         <div className="menu-element">
-          <div className="card-img" id="card1">
+          <div className="card-img" id="card1">   
 
           </div>
 
@@ -69,5 +82,5 @@ export function MenuSection() {
         
       </div>
     </div>
-  )
+  );
 }

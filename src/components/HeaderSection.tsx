@@ -1,13 +1,11 @@
 import { NavBar } from "./NavBar";
 
-export function HeaderSection() {
+export function HeaderSection({setLock}:{setLock:any}) {
   return (
     <div className='main-header'>
-      <NavBar/>
+      <NavBar setLock={setLock}/>
       
-      <div className="landing-img">
-
-      </div>
+      <div className="landing-img"></div>
     </div>
   )
 }

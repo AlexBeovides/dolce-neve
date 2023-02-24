@@ -1,11 +1,11 @@
 import '../styles/ParallaxImg.scss'
 
-export function ParallaxImg() {
+export const ParallaxImg=({inView} : {inView:boolean}) => {
   return (
     <div className='parallax-wrapper'>
-      <div className='parallax-img'>
+    <div  className={`${inView ? 'parallax2' : 'parallax1'} parallax-img`}>
        
       </div>
     </div>
-  )
-}
+  );
+} 

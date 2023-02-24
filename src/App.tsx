@@ -8,21 +8,31 @@ import { MenuSection } from "./components/MenuSection";
 import { RecipeSection } from "./components/RecipeSection";
 import { FooterSection } from "./components/FooterSection";
 
-
 function App() {
+  const [ inView1 , setInView1 ] = useState(false);
+  const [ inView2 , setInView2 ] = useState(false);
+  const [ locked , setLock ] = useState(false)
+
   return (
-    <div>
-        <HeaderSection/>
+    <div className={`${locked ? 'locked' : 'null'} main-container`}>
+        <HeaderSection setLock={setLock}/>
         <BodySection/>
         <ParallaxText
           innerText={"gelati popolari"}
         />
-        <ParallaxImg/>
-        <MenuSection/>
+        <ParallaxImg
+           inView={inView1||inView2}
+        
+         />
+        <MenuSection 
+          setInView={setInView1}
+        />
         <ParallaxText
           innerText={"deliziose ricette"}
         />
-        <RecipeSection/>
+        <RecipeSection
+          setInView={setInView2}
+        />
         
         <FooterSection/>
 
