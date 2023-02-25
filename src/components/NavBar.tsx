@@ -1,5 +1,6 @@
 import '../styles/NavBar.scss';
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 export function NavBar({setLock}:{setLock:any}) {
 
@@ -14,10 +15,10 @@ export function NavBar({setLock}:{setLock:any}) {
 
         <div className="nav-links">
         
-          <a href="#" target="blank">menu</a>
-          <a href="#" target="blank">recetas</a>
-          <a href="#" target="blank">nosotros</a>
-        
+          <Link to="/menu" target="blank"> menu </Link>
+          <Link to="/recipes" target="blank"> recetas </Link>
+          <Link to="/about" target="blank"> nosotros </Link>
+           
       </div>
 
         <div className='hamburger' onClick={()=>{setClicked(!clicked);setLock(!clicked)}}>
@@ -26,10 +27,6 @@ export function NavBar({setLock}:{setLock:any}) {
           <div className="bottom"></div>
         </div>
       </div>
-
-      
-      
-
     </div>
   )
 }

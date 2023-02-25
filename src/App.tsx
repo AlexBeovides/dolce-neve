@@ -1,42 +1,34 @@
 import "./styles/_main.scss";
-import { useState, useRef } from "react";
-import { HeaderSection } from "./components/HeaderSection";
-import { BodySection } from "./components/BodySection";
-import { ParallaxText } from "./components/ParallaxText";
-import { ParallaxImg } from "./components/ParallaxImg";
-import { MenuSection } from "./components/MenuSection";
-import { RecipeSection } from "./components/RecipeSection";
+import { NavBar } from "./components/NavBar"; 
 import { FooterSection } from "./components/FooterSection";
+import { Home } from "./pages/Home"
+import { Menu } from "./pages/Menu"
+import { Recipes } from "./pages/Recipes"
+import { About } from "./pages/About"
+
+import { Route , Routes } from 'react-router-dom'
+import { useState } from "react";
 
 function App() {
-  const [ inView1 , setInView1 ] = useState(false);
-  const [ inView2 , setInView2 ] = useState(false);
-  const [ locked , setLock ] = useState(false)
+  const [ locked , setLock ] = useState(false);
 
   return (
-    <div className={`${locked ? 'locked' : 'null'} main-container`}>
-        <HeaderSection setLock={setLock}/>
-        <BodySection/>
-        <ParallaxText
-          innerText={"gelati popolari"}
-        />
-        <ParallaxImg
-           inView={inView1||inView2}
-        
-         />
-        <MenuSection 
-          setInView={setInView1}
-        />
-        <ParallaxText
-          innerText={"deliziose ricette"}
-        />
-        <RecipeSection
-          setInView={setInView2}
-        />
-        
-        <FooterSection/>
+    <>
+      <div className={`${locked ? 'locked' : 'null'} main-container`}>
+        <NavBar setLock={setLock}/> 
 
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/menu" element={<Menu/>}></Route>
+          <Route path="/recipes" element={<Recipes/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
+        </Routes>
+
+        <FooterSection/>
     </div>
+
+    </>
+    
     
   )
 }
