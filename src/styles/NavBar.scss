@@ -28,9 +28,13 @@
       transition: transform 250ms ease-in; 
     }
 
-    &:hover::after {
+    &:hover::after , &:focus::after {
       transform: scaleX(1);
       transform-origin: left; 
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 

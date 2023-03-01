@@ -1,13 +1,15 @@
 .parallax-wrapper {
   position: fixed;
+  height: 100vh;
+  width: 100vw;
   top: 0; 
   z-index: -1;
 }
 
 
 .parallax-img {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   // background-image: url('../assets/images/parallax-img1.jpg');
   background-size: cover;
   background-position: center;

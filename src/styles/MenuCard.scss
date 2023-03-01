@@ -1,0 +1,28 @@
+ 
+.card__info--price {
+   text-align: right;
+   color: orangered;
+}
+
+.stars-container {
+   display: flex;
+   justify-content: flex-start;
+}
+
+.star {
+   height: 20px;
+   width: 20px;
+   background-repeat: no-repeat;
+   
+}
+
+.active {
+   background-image: url('../assets/images/star-active.svg');
+}
+
+.inactive {
+   background-image: url('../assets/images/star-inactive.svg');
+
+}
+
+ 

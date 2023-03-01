@@ -1,21 +1,8 @@
-.recipe-section {
-  position: relative; 
+
+.tripod2 { 
+  position: absolute;
+  bottom: top;
   width: 100vw;
-  height: 150vh;
-  background:linear-gradient(45deg, #EEEEEE, #FAF8F9, #FFFFFF);
-
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  .tripod { 
-    position: absolute;
-    bottom: top;
-    width: 100vw;
-    height: auto;
-    transform: translateY(-150vh);
-  }
-
+  height: auto;
+  transform: translateY(-150vh);
 }
-
