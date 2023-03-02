@@ -14,7 +14,8 @@ function App() {
 
   return (
     <>
-      <div className={`${locked ? 'locked' : 'null'} main-container`}>
+      {/* <div className={`${locked ? 'locked' : 'null'} main-container`}> */}
+      <div className={`main-container`}>
         <NavBar setLock={setLock}/> 
 
         <Routes>

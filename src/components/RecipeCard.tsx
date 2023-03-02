@@ -21,7 +21,7 @@ export const RecipeCard= (props : CardProps) => {
       <div className="card__info">
         <div className="car__info--title">
           <h3>{propName}</h3>
-          <div className="bottom-row">Chef. {propChef}</div>
+          <div className="bottom-row chef-name">Chef. {propChef}</div>
         </div>
 
       </div>
