@@ -26,8 +26,9 @@ export const MenuCard= (props : CardProps) => {
 
   return (
     <div className="card">
-      <div className="card__image">
-        <img src={`${propUrl}`} alt="Salad" width="500" height="333" />
+      <div className="card__image-container">
+        <div className="card__image" style={{ backgroundImage: `url(${propUrl})`}}></div>
+        {/* <img src={`${propUrl}`} alt="Salad" width="500" height="333" /> */}
       </div>
       <div className="card__info">
         <div className="car__info--title">

@@ -5,14 +5,17 @@ import { useState , useEffect } from 'react';
 
 import { useInView } from 'react-intersection-observer'
 import { InView } from 'react-intersection-observer/InView';
+
+import rCardImg1 from "../assets/images/recipe-card1.jpg";
+import rCardImg2 from "../assets/images/recipe-card2.jpg";
+import rCardImg3 from "../assets/images/recipe-card3.jpg";
  
  
 
 export const RecipeSection= ({setInView}:{setInView:any}) => { 
   const { ref , inView }  = useInView();
 
-  useEffect (()=> {
-    console.log("asd")
+  useEffect (()=> { 
     if(inView==true){
       setInView(true);
     }
@@ -28,9 +31,9 @@ export const RecipeSection= ({setInView}:{setInView:any}) => {
       </div>
 
       <div className='container'>
-        <RecipeCard name="Pistaccio" chef="Elogio Prestigiacomo" url="/src/assets/images/recipe-card1.jpg"/>
-        <RecipeCard name="Amaretto" chef="Cristoforo De Nucci" url="/src/assets/images/recipe-card2.jpg"/>
-        <RecipeCard name="Schiacciata Fiorentina" chef="Cesario Sabatini"  url="/src/assets/images/recipe-card3.jpg"/>
+        <RecipeCard name="Pistaccio" chef="Elogio Prestigiacomo" url={rCardImg1}/>
+        <RecipeCard name="Amaretto" chef="Cristoforo De Nucci" url={rCardImg2}/>
+        <RecipeCard name="Schiacciata" chef="Cesario Sabatini"  url={rCardImg3}/>
       </div>
 
       <div ref={ref} className="tripod2"></div> 

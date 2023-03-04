@@ -1,6 +1,7 @@
 import '../styles/BodySection.scss';
 import { useInView } from 'react-intersection-observer'
 import { InView } from 'react-intersection-observer/InView';
+import bgBodySect from "../assets/images/body-section1.png";
 
 export function BodySection() {
   const { ref , inView } = useInView();
@@ -17,7 +18,7 @@ export function BodySection() {
         
       </div>
       
-        <div className="section-img">
+        <div className="section-img" style={{ backgroundImage: `url(${bgBodySect})`}}>
 
 
       </div>

@@ -6,6 +6,9 @@ import { useState , useEffect } from 'react';
 import { useInView } from 'react-intersection-observer'
 import { InView } from 'react-intersection-observer/InView';
  
+import mCardImg1 from "../assets/images/menu-card1.png";
+import mCardImg2 from "../assets/images/menu-card2.png";
+import mCardImg3 from "../assets/images/menu-card3.jpg";
  
 
 export const MenuSection= ({setInView}:{setInView:any}) => { 
@@ -29,9 +32,9 @@ export const MenuSection= ({setInView}:{setInView:any}) => {
       </div>
 
       <div className='container'>
-        <MenuCard name="Budino di riso" price="5" stars={5} url="/src/assets/images/menu-card1.png"/>
-        <MenuCard name="Stracciatella"  price="7" stars={3} url="/src/assets/images/menu-card2.png"/>
-        <MenuCard name="Cantuccini & Vin Santo" price="3" stars={4} url="/src/assets/images/menu-card3.jpg"/>
+        <MenuCard name="Budino di riso" price="5" stars={5} url={mCardImg1}/>
+        <MenuCard name="Stracciatella"  price="7" stars={3} url={mCardImg2}/>
+        <MenuCard name="Cantuccini" price="3" stars={4} url={mCardImg3}/>
       </div>
  
       <div ref={ref} className="tripod1">

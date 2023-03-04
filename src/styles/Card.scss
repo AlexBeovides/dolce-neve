@@ -16,19 +16,24 @@
   transform: translateY(-20px);
 }
 
-.card__image {
+.card__image-container {
    position: relative;
    height: 75%;
-}
-
-.card__image > img {
-   max-width: 100%;
+  }
+  
+  .card__image  {
+    width: 106.5%;
+  // width: 500px;
+  // height: 333px ;
+  //  max-width: 100%;
    border-bottom-right-radius: 30px;
    transform: rotate(10deg) translate(-15px, -20%);
    position: absolute;
    height: 100%;
-   object-fit: cover;
-   object-position: top;
+   background-size: cover;
+   background-position: top;
+  //  background-fit: cover;
+  //  object-position: top;
 }
 
 .card__info {
