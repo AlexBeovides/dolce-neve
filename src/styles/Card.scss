@@ -1,0 +1,86 @@
+.card {
+  //  width: 295px;
+   width: 29%;
+   aspect-ratio: 1.3;
+   overflow: hidden;
+   border-radius: 25px;
+   border: 1px solid lavender;
+   margin: 10px;
+   box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
+   position: relative;
+   transform: translateY(0);
+   transition: transform 0.3s ease;
+}
+
+.card:hover, .card:focus {
+  transform: translateY(-20px);
+}
+
+.card__image-container {
+   position: relative;
+   height: 75%;
+  }
+  
+  .card__image  {
+    width: 106.5%;
+  // width: 500px;
+  // height: 333px ;
+  //  max-width: 100%;
+   border-bottom-right-radius: 30px;
+   transform: rotate(10deg) translate(-15px, -20%);
+   position: absolute;
+   height: 100%;
+   background-size: cover;
+   background-position: top;
+  //  background-fit: cover;
+  //  object-position: top;
+}
+
+.card__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0px 20px 10px 20px;
+}
+.card__info h3 {
+  font-size: min(4vw,20px);
+  font-weight: 700;
+  margin-block-end: 0;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.card__info p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bottom-row {
+  margin-top: 15%;
+}
+
+
+@media (max-width: 900px ){
+
+.card {
+  width: 60%;
+  aspect-ratio: 1.55; 
+}
+
+.bottom-row {
+  margin-top: 10px;
+}
+}
+
+@media (max-width: 500px ){
+
+  .card {
+    width: 90%;
+  }
+  
+  
+}
