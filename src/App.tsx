@@ -19,10 +19,10 @@ function App() {
         <NavBar setLock={setLock}/> 
 
         <Routes>
-          <Route path="/dolce-neve-prod/" element={<Home/>}></Route>
-          <Route path="/dolce-neve-pro/menu" element={<Menu/>}></Route>
-          <Route path="/dolce-neve-prod/recipes" element={<Recipes/>}></Route>
-          <Route path="/dolce-neve-prod/about" element={<About/>}></Route>
+          <Route path="/dolce-neve/" element={<Home/>}></Route>
+          <Route path="/dolce-neve/menu" element={<Menu/>}></Route>
+          <Route path="/dolce-neve/recipes" element={<Recipes/>}></Route>
+          <Route path="/dolce-neve/about" element={<About/>}></Route>
         </Routes>
 
         <FooterSection/>
