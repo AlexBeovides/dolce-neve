@@ -15,15 +15,14 @@ export function NavBar({setLock}:{setLock:any}) {
   return (
     <div className={`main-navbar ${clicked ? 'clicked' : 'non-clicked'}` }>
       <div className="wrapper">
-        <div className="logo-container">
-          dolce neve
-        </div>
+      <Link to="/dolce-neve/" target="blank" className="logo-container"> dolce neve </Link>
+         
 
         <div className="nav-links">
         
-          <Link to="/menu" target="blank"> menu </Link>
-          <Link to="/recipes" target="blank"> recetas </Link>
-          <Link to="/about" target="blank"> nosotros </Link>
+          <Link to="/dolce-neve/menu" target="blank"> menu </Link>
+          <Link to="/dolce-neve/recipes" target="blank"> recetas </Link>
+          <Link to="/dolce-neve/about" target="blank"> nosotros </Link>
            
       </div>
 

@@ -7,6 +7,32 @@
   box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
   z-index: 100; 
 
+ 
+  }
+
+  .logo-container {
+    color: black;
+    font-size: 4.5vh;
+    text-decoration: none;
+  }
+
+
+.wrapper {
+  width: 100%;
+  height: 11.5vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3% 0 3%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 6vmax;
+
   a {
     font-size: 1.7rem;
     color: black;
@@ -37,28 +63,6 @@
       outline: none;
     }
   }
-
-  .logo-container {
-    color: black;
-    font-size: 4.5vh;
-  }
-}
-
-.wrapper {
-  width: 100%;
-  height: 11.5vh;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3% 0 3%;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 6vmax;
 }
 
 .hamburger {
